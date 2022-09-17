@@ -39,16 +39,16 @@ formulario.addEventListener("submit", validarFormulario);
 function validarFormulario(){
     event.preventDefault();
     let nom1 = document.getElementById("Nombre");
-    nom1.innerHTML = `<h2>Nombre: ${nom}</h2>`;
+    nom1.innerHTML = `<h2>Nombre: ${nom.value}</h2>`;
     let ape1 = document.getElementById("Apellido");
-    ape1.innerHTML = `<h2>Apellido: ${ape}</h2>`;
+    ape1.innerHTML = `<h2>Apellido: ${ape.value}</h2>`;
     let str1 = document.getElementById("Calle");
-    str1.innerHTML = `<h2>Calle: ${str}</h2>`;
+    str1.innerHTML = `<h2>Calle: ${str.value}</h2>`;
     let cty1 = document.getElementById("Ciudad");
-    cty1.innerHTML = `<h2>Ciudad: ${cty}</h2>`;
+    cty1.innerHTML = `<h2>Ciudad: ${cty.value}</h2>`;
     let sta1 = document.getElementById("Estado");
-    sta1.innerHTML = `<h2>Estado: ${sta}</h2>`;
+    sta1.innerHTML = `<h2>Estado: ${sta.value}</h2>`;
     let zip1 = document.getElementById("CP");
-    zip1.innerHTML = `<h2>C.p.: ${zip}</h2>`;
+    zip1.innerHTML = `<h2>C.p.: ${zip.value}</h2>`;
     console.log(nom);
 }
